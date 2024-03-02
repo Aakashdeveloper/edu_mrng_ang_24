@@ -1,0 +1,94 @@
+https://code.visualstudio.com/  > Install
+https://nodejs.org/en > Install
+https://git-scm.com/downloads > Install
+https://github.com/ > Create Account
+https://github.com/Aakashdeveloper > Follow
+
+
+Npm
+FullStack Zomato app
+Template Forms
+Reactive Forms
+Login logout (jwt)
+Dummy api
+Deployment
+> Angular over node server
+> Angular over python server
+> Netlify(https://www.netlify.com/)
+> Github
+> AWS
+> Jenkins
+> nginx
+> Docker 
+> Github Actions
+LazyLoading
+Testing
+Zomato+login logout
+//////////////////////
+Ang Material
+Multilingual
+Zomato + Google Login
+Payment
+
+>>>>>>>>NO Covered<<<<<>>>>>
+> HTML CSS JAVASCRIPT
+> No Api Building (app,loginlogout)
+
+
+open source
+
+////
+***Package.json***
+> Entry point to app
+> Meta data(version, description, package, commands)
+
+/// Step to generate package.json
+** Nodejs must be install in laptop
+> open the cmd/terminal and go inside the folder
+> npm init
+> answer all question
+> type "yes"
+
+
+/// Step to install packages
+** Nodejs must be install in laptop
+> open the cmd/terminal and go inside the folder
+> npm i packagename
+
+
+package-lock > have dependency tree for child package
+node_modules > have all the package we installed in app
+.gitignore > to avoid pushing code to git
+
+local
+> Local to the folder
+> Can be used inside this folder only
+
+global
+> install in laptop
+> use to generate angular app
+> need admin permision to install
+
+//step to generate angular app
+# one time
+# window
+> open cmd as admin
+> npm i -g @angular/cli
+
+# next all tine
+> open cmd
+> go inside particular folder
+> ng new appname
+
+# one time
+# mac
+> open terminal
+> sudo npm i -g @angular/cli
+
+# next all tine
+> open terminal
+> go inside particular folder
+> ng new appname
+
+
+
