@@ -168,3 +168,60 @@ Routing
 * To navigate between the pages
 * TO achieve single page application
 
+
+/////Command
+> Component
+# ng g c componentname
+
+
+data binding
+>>> One way data binding
+* Data Binding {{}}
+* Property Binding []
+* Event Binding ()
+
+>> Two way data binding [()]
+
+
+
+(NodeJs + Express + Mongodb + Aws)
+(get) cityname >           http://3.17.216.66:4000/location
+(get) restwrtcity >        http://3.17.216.66:4000/restaurant?stateId=1
+(get) quickSearch>         http://3.17.216.66:4000/quicksearch
+
+(get) onbasisofMeal >      http://3.17.216.66:4000/restaurant?mealtype_id=
+(get) cuisinefilter >      http://3.17.216.66:4000/filter/4?cuisine=1
+(get) costfilter >         http://3.17.216.66:4000/filter/1?hcost=1000&lcost=500
+
+(get) restdetails >        http://3.17.216.66:4000/details/1       
+
+(get) allorder>            
+       
+(get) restaurants>         http://3.17.216.66:4000/restaurants
+
+
+/////JSON///////
+JavaScript Object Notation
+Way to represent the data
+key value pair
+
+[
+    {
+        "name":"John",
+        "city":"Amsterdam"
+    },
+    {
+        "name":"Doe",
+        "city":"Helsinki"
+    },
+    {
+        "name":"Anjali",
+        "city":"Helsinki",
+        "age":10
+    }
+]
+
+//structural directive
+*ngIf
+*ngFor
+*ngSwitch
