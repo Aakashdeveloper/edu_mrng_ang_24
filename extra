@@ -225,3 +225,13 @@ key value pair
 *ngIf
 *ngFor
 *ngSwitch
+
+//////
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+
+var a = 10
+var b = `my age is ${a}`
+"my age is 10"
