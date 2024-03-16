@@ -235,3 +235,12 @@ var b = "my age is "+a
 var a = 10
 var b = `my age is ${a}`
 "my age is 10"
+
+//////
+params
+> What we pass after /
+> if we have to pass params then we need to define
+
+queryParams
+> What we pass after ?
+> no need to define
