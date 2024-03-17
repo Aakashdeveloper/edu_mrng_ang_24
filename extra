@@ -244,3 +244,12 @@ params
 queryParams
 > What we pass after ?
 > no need to define
+
+
+var a = [2,6,4,3,8,6,1]
+
+a.filter((data) => {return data >5})
+
+
+@Input > parent to child
+@Output(eventEmitter) > child to parent

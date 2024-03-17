@@ -19,5 +19,13 @@ export class ListingService{
         {headers:Headers})
     }
 
+    getCuisineData(cuisineId:string,mealId:Number): Observable<IRest[]>{
+        return this.http.get<IRest[]>(`${environment.apiUrl}/filter/${mealId}?cuisine=${cuisineId}`)
+    }
+
+    getCostData(lcost:string,hcost:string,mealId:Number): Observable<IRest[]>{
+        return this.http.get<IRest[]>(`${environment.apiUrl}/filter/${mealId}?hcost=${hcost}&lcost=${lcost}`)
+    }
+
 
 }
