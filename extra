@@ -253,3 +253,6 @@ a.filter((data) => {return data >5})
 
 @Input > parent to child
 @Output(eventEmitter) > child to parent
+
+ng-touched      ng-dirty     ng-invalid
+ng-untouched    ng-prestine  ng-valid
