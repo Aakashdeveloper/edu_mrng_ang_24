@@ -5,7 +5,7 @@
             Employee Forms
         </div>
         <div class="panel-body">
-            <form>
+            <form #form="ngForm" (submit)="submitForm(form)">
                 <div class="form-group"
                 [class.has-error]="firstname.invalid  && firstname.touched"
                 [class.has-success]="firstname.valid">
@@ -13,7 +13,8 @@
                     <label class="control-label" for="fname">FirstName</label>
                     <input id="fname" class="form-control"
                     name="firstName"
-                    [(ngModel)]="myEmployee.firstName"
+                    [ngModel]="myEmployee.firstName"
+                    (ngModelChange)= "firstToUpper($event)"
                     #firstname="ngModel"
                     required
                     />
@@ -76,9 +77,11 @@
                             Please Select Valid option
                         </div>
                     </div>
-
-                   
                 </div>
+                <br/>
+                <button class="btn btn-success" type="submit">
+                    Submit
+                </button>
                 
             </form>
         </div>

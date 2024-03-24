@@ -256,3 +256,8 @@ a.filter((data) => {return data >5})
 
 ng-touched      ng-dirty     ng-invalid
 ng-untouched    ng-prestine  ng-valid
+
+Dummy Api
+> npm i -g json-server
+
+json-server --watch data.json --port 9122
