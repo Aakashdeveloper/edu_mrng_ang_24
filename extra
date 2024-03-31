@@ -18,27 +18,27 @@ Template Forms
 Reactive Forms
 Dummy api
 Login logout (jwt)
-///////////////////////
-
 Deployment
 > Angular over node server
 > Angular over python server
 > Netlify(https://www.netlify.com/)
 > Github
-> AWS
 > Jenkins
 > nginx
-> Docker 
 > Github Actions
-LazyLoading
+> Docker 
+//////////////////////
+> AWS
 
+
+LazyLoading
 Testing
 Zomato+login logout
 //////////////////////
 Ang Material
 Multilingual
 Zomato + Google Login
-Payment
+
 
 >>>>>>>>NO Covered<<<<<>>>>>
 > HTML CSS JAVASCRIPT
@@ -281,3 +281,32 @@ json-server --watch data.json --port 9122
 /******UserInfo*****/
 (GET) => http://3.17.216.66:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+//////
+Making build of angular app
+///
+npm run build
+
+https://raw.githubusercontent.com/Aakashdeveloper/Aakashdeveloper/master/README.md
+
+
+// first time
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Aakashdeveloper/marchzom.git
+git push -u origin main
+
+
+// next all time
+git add .
+git commit -m "first commit"
+git push
+
+
+git checkout -b branchname
+
+
+docket build . -t imagename
+docket run -p 4200:8900 imagename
