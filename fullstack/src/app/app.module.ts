@@ -11,6 +11,10 @@ import { NotFoundComponent } from './notfound/notfound.component';
 import { HomeModule } from './home/home.module';
 import { ListingModule } from './listing/listing.module';
 import { DetailsComponent } from './details/details.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginService } from './login/login.service';
+import { RegisterService } from './register/register.service';
 
 @NgModule({
 
@@ -20,7 +24,9 @@ import { DetailsComponent } from './details/details.component';
         HeaderComponent,
         FooterComponent,
         DetailsComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        LoginComponent,
+        RegisterComponent
     ],
 
     // All modules
@@ -35,7 +41,9 @@ import { DetailsComponent } from './details/details.component';
 
     // All the services
     providers:[
-        DetailsService
+        DetailsService,
+        RegisterService,
+        LoginService
     ],
 
     // only and only main component

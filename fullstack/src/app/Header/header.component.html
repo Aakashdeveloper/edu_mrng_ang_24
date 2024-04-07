@@ -3,15 +3,22 @@
         Developer Funnel
         <button [routerLink]="['/']" class="btn btn-info">Home</button>
     </div>
-    <div id="social">
-        <a href="">
-            <img src="../../assets/images/facebook.png" alt="fblogo" class="socialLogo"/>
+    <div id="social" *ngIf='token == ""'>
+        <a [routerLink]="['/login']" class="btn btn-primary">
+           <span class="glyphicon glyphivon-log-in"></span> Login
+        </a> &nbsp;&nbsp;
+        <a [routerLink]="['/register']" class="btn btn-success">
+            <span class="glyphicon glyphivon-user"></span> Register
         </a>
-        <a href="">
-            <img src="https://i.ibb.co/GHKVNYt/insta.png" alt="fblogo" class="socialLogo"/>
-        </a>
-        <a href="">
-            <img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="fblogo" class="socialLogo"/>
-        </a>
+    </div>
+
+    <div id="social" *ngIf='token !== ""'>
+        <a [routerLink]="['/login']" class="btn btn-warning">
+            <span class="glyphicon glyphivon-info"></span> 
+            Hi {{userInfo.name}}
+        </a> &nbsp;&nbsp;
+        <a class="btn btn-danger" (click)="logoutUser()">
+         <span class="glyphicon glyphivon-log-out"></span> Logout
+     </a>
     </div>
 </header>
