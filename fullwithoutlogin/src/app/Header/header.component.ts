@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class HeaderComponent{
-   
+   title="text"
 }
